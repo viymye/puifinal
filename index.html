@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yellowstone Wolves</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,700italic,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/anime.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            $('#lineDrawing').waypoint(function() {
+                // alert('hel');
+                var lineDrawing = anime({
+                targets: '#lineDrawing .lines path',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 3200,
+                delay: function(el, i) { return i * 250 },
+                direction: 'alternate',
+                loop: false
+                });
+            }, {
+                offset: -500
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+        </nav>
+    </header>
+
+
+    <div id="hero">
+        <h4 class='subtitle'>yellowstone's</h4>
+        <h1 class='herotitle'>Gray Wolves</h1>
+    </div>
+
+    <div id="parallax-container">
+        <div style="background: url('images/hero6.png');"></div>
+        <div style="background: url('images/hero5.png');"></div>
+        <div style="background: url('images/hero4.png');"></div>
+        <div style="background: url('images/hero3.png');"></div>
+        <div style="background: url('images/hero2.png');"></div>
+        <div style="background: url('images/hero1.png');"></div>
+    </div>
+    
+    <div id="content">
+
+        <div id="content-1">
+            <h4 class='subtitle'>meet the</h4>
+            <h1 class='herotitle'>Gray Wolf</h1>
+        </div>
+
+        <div id="content-2">
+            <div class="column_container">
+                <div id="leftcolumn">
+                    <h4 class='subtitle'>Scientific Name</h4>
+                    <p>Canus Iupus</p>
+                    <br>
+                    <h4 class='subtitle'>Type</h4>
+                    <p>Mammals</p>
+                </div>
+                <div id="rightcolumn">
+                    <h4 class='subtitle'>Diet</h4>
+                    <p>Carnivores</p>
+                    <br>
+                    <h4 class='subtitle'>Life Span</h4>
+                    <p>6-8 years</p>
+                </div>
+            </div>
+
+            <div id="image_sequence">
+                
+                <div id="container">
+                    <img src="images/wolfrun1.png" class="animated" />
+                    <img src="images/wolfrun2.png" class="animated" />
+                    <img src="images/wolfrun3.png" class="animated" />
+                    <img src="images/wolfrun4.png" class="animated" />
+                    <img src="images/wolfrun5.png" class="animated" />
+                    <img src="images/wolfrun6.png" class="animated" />
+                    <img src="images/wolfrun7.png" class="animated" />
+                    <img src="images/wolfrun8.png" class="animated" />
+                    <img src="images/wolfrun9.png" class="animated" />
+                    <img src="images/wolfrun10.png" class="animated" />
+                    <img src="images/wolfrun11.png" class="animated" />
+                    <img src="images/wolfrun12.png" class="animated" />
+                    <img src="images/wolfrun13.png" class="animated" />
+                </div>
+
+                
+            </div>
+
+        </div>
+
+        <div id="content-3">
+            <div id='yellowdisplay'>
+                <h1 id='displaytext1' class='displaytext'>yellow</h1>
+                <h1 id='displaytext2' class='displaytext'>stone</h1>
+            </div>
+            <div id='yellowpara1'>
+                <h5 class='quote'>— arguably the most <span class="pinktext">carnivore-rich</span> area in North America</h5>
+                <p id='para1' class='para'>The gray wolf was present in Yellowstone when the park was established in 1872. Between 1914 and 1926, at least 136 wolves were killed in the park; by the 1940s, wolf packs were rarely reported. By the mid-1900s, wolves had been almost entirely eliminated from the 48 states.</p>
+            </div>
+            <div id='yellowpara2'>
+                <h5 class='quote'>— the long process to <span class="pinktext">restore wolves</span> in Yellowstone</h5>
+                <p id='para2' class='para'>The wolf is a major predator that had been missing from the Greater Yellowstone Ecosystem for decades until its restoration in 1995.</p>
+            </div>
+
+            <div id="lineDrawing"> <svg width="100%" height="100%" viewBox="0 0 1600 1200" preserveAspectRatio="none">
+                    <!-- <rect width="100%" height="100%" fill="red"/> -->
+                    <g fill="none" fill-rule="evenodd" stroke="#FF867C" stroke-width="2" class="lines" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M965.5,11 C807.833333,133.333333 734.666667,250.5 746,362.5 C763,530.5 844.5,693.978157 656,841 C467.5,988.021843 337,836.007011 333.5,766 C330,695.992989 354,638.448223 387,577.915592 C422.126023,513.48315 429,554.903187 454.5,535.39267 C454.5,552.401839 465,545.398064 465,555.403457 C465,562.073719 465,567.743442 465,572.412626 C465,565.408851 473.666667,558.405075 491,551.4013 C517,540.895637 505,523.886468 515.5,516.882692 C526,509.878917 542,491.869209 542,473.8595 C542,455.849792 533,458.85141 526.5,463.854107 C520,468.856804 506,492.869748 494.5,487.867051 C483,482.864355 493,458.351141 501.5,449.846556 C510,441.341972 521.5,438.340354 524,428.83523 C524,440.841702 526.5,449.346286 524,459.85195 C531,448.345747 533,439.841163 533,431.336578 C533,422.831994 530.5,415.327949 526.5,413.82714 C529.166667,413.82714 530.666667,413.993896 531,414.327409 C528.666667,406.990121 526.166667,402.987963 523.5,402.320937 C519.5,401.320398 524.5,405.322555 522.5,412.8266 C520.5,420.330645 517,426.834151 514,425.833612 C511,424.833073 511.5,415.828218 509,415.327949 C507.333333,414.994436 505.333333,413.993896 503,412.326331 C507,410.325252 509.666667,408.824443 511,407.823904 C513,406.323095 519,405.322555 519,416.328488 C519.5,410.325252 521,398.81905 519.5,398.81905 C518,398.81905 518,396.317701 505.5,405.322555 C493,414.327409 466,438.840623 461.5,444.34359 C457,449.846556 445.5,449.846556 442.5,451.347365 C439.5,452.848174 435,457.350601 435,462.353298 C439,461.352759 444.5,461.853028 448,458.85141 C450.333333,456.850332 452.166667,455.349523 453.5,454.348983 C453.833333,462.019785 451,467.189238 445,469.857343 C436,473.8595 442.97985,474.934387 408.5,479.862737 C377,484.365164 408.5,497.372175 410,504.375951 C411.5,511.379726 411,519.88431 408.5,523.886468 C416.5,515.381883 414,509.878917 436,503.375411 C458,496.871905 458,489.36786 462.5,456.850332 C467,424.332803 437,439.340893 426,446.844938 C415,454.348983 406.5,459.35168 401.5,465.354916 C396.5,471.358152 386,481.863815 361.5,493.370018 C337,504.87622 336,504.87622 331,506.877299 C326,508.878378 318,519.88431 333.5,528.388895 C349,536.893479 350.5,541.896176 355.5,541.896176 C360.5,541.896176 374,527.388355 374,520.88485 C374,514.381344 369,509.378647 358,514.381344 C350.666667,517.716475 345.166667,519.050528 341.5,518.383501 C346.166667,520.051067 349.666667,522.385659 352,525.387277 C355.5,529.889704 362.5,527.388355 374,527.388355 C385.5,527.388355 387,542.896715 395,542.896715 C382.5,542.896715 369.5,548.399682 363,548.399682 C358.666667,548.399682 354,547.232386 349,544.897794 C307,581.250724 280,618.103923 268,655.457392 C294,631.444447 305.612577,622.988317 338,618.937706 C354,616.936627 354.5,634.946335 381,634.946335 C407.5,634.946335 411.5,645.451998 410,657.95874 C408.5,670.465482 413,684.973302 418,693.978157 C423,702.983011 428.5,716.990561 426,734.5 C461.5,718.99164 497.5,634.946335 501.5,618.937706 C504.166667,608.265286 506.666667,592.756926 509,572.412626 C511.333333,570.74506 514.166667,570.74506 517.5,572.412626 C518.5,566.742903 516.833333,561.740206 512.5,557.404536 C516.5,556.73751 519.833333,557.571292 522.5,559.905884 C522.5,555.570214 519.666667,550.567517 514,544.897794 C517.666667,544.564281 520,545.064551 521,546.398603 C521,540.72888 520.5,530.890243 519.5,516.882692" id="Path-3"></path>
+                </svg> </div>
+        </div>
+
+        <div id="content-4">
+            <div class="column_container" id='chain1'>
+                <div id="leftcolumn">
+                    <img src="images/wolf.png" class="chainimg">
+                </div>
+                <div id="rightcolumn">
+                    <p class='para chainpara'>wolves arrived and, although they were few in numbers, they had remarkable effects</p>
+                </div>
+            </div>
+            <br>
+            <div class="column_container" id='chain2'>
+                <div id="leftcolumn">
+                    <img src="images/elk.png" class="chainimg">
+                </div>
+                <div id="rightcolumn">
+                    <p class='para chainpara'>elk and deer began avoiding valleys and gorges, where they could be easily trapped</p>
+                </div>
+            </div>
+            <br>
+            <div class="column_container" id='chain3'>
+                <div id="leftcolumn">
+                    <img src="images/tree.png" class="chainimg">
+                </div>
+                <div id="rightcolumn">
+                    <p class='para chainpara'>these places started to regenerate and bare valley sides quickly became forests of aspen, willow and cottonwood</p>
+                </div>
+            </div>
+            <br>
+            <div class="column_container" id='chain4'>
+                <div id="leftcolumn">
+                    <img src="images/bird.png" class="chainimg">
+                </div>
+                <div id="rightcolumn">
+                    <p class='para chainpara'>regenerating forests stabilized river banks, which became more stable in course </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+     
+
+
+
+    <script type="text/javascript">
+        window.sr = ScrollReveal({ reset: true });
+        sr.reveal('#chain1', { duration: 1000 });
+        sr.reveal('#chain2', { duration: 1000 });
+        sr.reveal('#chain3', { duration: 1000 });
+        sr.reveal('#chain4', { duration: 1000 });
+    </script>
+
+</body>
+
+</html>
