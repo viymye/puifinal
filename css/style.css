@@ -271,6 +271,7 @@ svg {
         float: none;
         text-align: center;
         margin: 0;
+        padding: 0;
         display: block;
     }
     #content-2 #rightcolumn {
@@ -279,7 +280,9 @@ svg {
         float: none;
         text-align: center;
         margin: 0;
+        padding: 0;
         display: block;
+        margin-top: 60px;
     }
     #container {
         margin-top: 200px;
